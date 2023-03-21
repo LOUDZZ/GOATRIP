@@ -1,0 +1,230 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+ background: linear-gradient(to bottom right, rgba(117, 172, 245, 0.603), rgb(255, 255, 255));
+
+}
+#main {
+  height: 825px;
+}
+
+/*header*/
+#navbar a {
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+}
+#header ul {
+  list-style: none;
+  padding-left: 0;
+}
+#navbar {
+  display: flex;
+  border-bottom: solid gray 1px;
+  align-items: center;
+  color:rgb(0, 0, 0); 
+  padding: 30px;
+  z-index: 1;
+  background: rgb(255, 255, 255);
+}
+.navbar__menu {
+  display: flex;
+  margin-right: 33%;
+}
+.navbar__logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 10%;
+}
+.navbar__menu__item:hover {
+  background-color: rgba(0, 0, 0, 0.603);
+  border-radius: 4px;
+}
+.navbar__toggle-btn {
+  position: absolute;
+  display: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  right: 20px;
+  top: 35px;
+  font-size: 25px;
+  background-color: transparent;
+}
+.navbar__menu__item:nth-child(5) {
+  padding-right: 10px;
+}
+.navbar__icon {
+  display: flex;
+  position: absolute;
+  right: 10%;
+}
+#user__icon {
+  padding-right: 30px;
+  font-size: 25px;
+}
+#language__icon {
+  font-size: 25px;
+}
+
+
+/*login__box*/
+ #login__box {
+    position: absolute;
+    background-color: white;
+    width: 25%;
+    height: 680px;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-30%);
+  }
+#login__text {
+    position: relative;
+    left: 10%;
+    top: 7%;
+    font-size: 25px;
+  }
+#id__text {
+    position: relative;
+    top: 20%;
+    left: 10%;
+    font-size: 12px;
+    color: rgb(77, 75, 75);
+  }
+#password__text {
+    position: relative;
+    top: 30%;
+    left: 10%;
+    font-size: 12px;
+    color: rgb(77, 75, 75);
+  }
+#login__id {
+    position: relative;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    height: 8%;
+    border: none;
+    border-bottom: solid black 1px;
+  }
+#login__password {
+    position: relative;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    height: 8%;
+    border: none;
+    border-bottom: solid black 1px;
+  }
+  #login__box {
+    background-color: rgb(255, 255, 255);
+  }
+  #login__id:hover {
+    border: solid 1px rgb(0, 0, 150);
+    border-radius: 3px;
+  }
+  #login__password:hover {
+    border: solid 1px rgb(2, 2, 105);
+    border-radius: 3px;
+  }
+  #login__submit {
+    position: relative;
+    width: 80%;
+    height: 8%;
+    top: 40%;
+    left: 10%;
+    background-color: rgba(9, 6, 85, 0.925);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+  #sigin__box {
+    width: 100%;
+    position: relative;
+    background-color: #b5f0ff59;
+    top: 57.2%;
+    height: 9%;
+  }
+  #sigin__box a{
+    color: rgb(7, 7, 105);
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #sigin__box:hover {
+    border: solid rgb(0, 13, 199) 1px;
+  }
+
+
+  /*bottom*/
+  #bottom {
+    height: 100px;
+    border-top: solid rgba(0, 0, 0, 0.596) 1px;
+    background-color:white;
+  }
+  @media screen and (max-width: 1200px) {
+    .navbar__toggle-btn {
+      display: block;
+      padding-right: 10%;
+      color: black;
+    }
+    #language__icon {
+		display: none;
+    }
+    #navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .navbar__menu {
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      display: none;
+    }
+    .navbar__menu.open {
+      display: block;
+    }
+    #user__icon {
+ 	 	  padding-right: 70px;
+  		font-size: 25px;
+	}
+}
+
+
+/*미디어쿼리*/
+@media screen and (max-width: 1200px) {
+    .navbar__toggle-btn {
+      display: block;
+      padding-right: 10%;
+      color: black;
+    }
+    #user__icon {
+ 	 	padding-right: 70px;
+  		font-size: 25px;
+	}
+    #language__icon {
+		display: none;
+    }
+    #navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .navbar__menu {
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      display: none;
+    }
+    .navbar__menu.open {
+      display: block;
+    }
+}
