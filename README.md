@@ -55,10 +55,4 @@ JSP게시판 프로젝트이며, HTML CSS JS JSP MYSQL 톰캣 v10.0을 이용하
 
 
 
->> 반응형 웹페이지입니다.
->> 
-![localhost_8080_GOATRIP_main jsp (1)](https://user-images.githubusercontent.com/127868594/226676742-9f58e8eb-8fb2-469d-bf8f-8898a68059ed.png)
-
-
-
 
